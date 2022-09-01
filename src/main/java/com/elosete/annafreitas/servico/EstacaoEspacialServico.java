@@ -9,42 +9,39 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class EstacaoEspacialServico {
 
-    @Service
-    public class ExplorandoServico {
+    private final EstacaoEspacial estacaoEspacial;
 
-        private final EstacaoEspacial estacaoEspacial;
+    @Autowired
+    public EstacaoEspacialServico(EstacaoEspacial estacaoEspacial) {
+        this.estacaoEspacial = estacaoEspacial;
+    }
 
-        @Autowired
-        public ExplorandoServico(EstacaoEspacial estacaoEspacial) {
-            this.estacaoEspacial = estacaoEspacial;
-        }
+    private Sentido explorarPlaneta(final Sondas sonda, List<Comandos> comandos) {
+        comandos.forEach(g -> g.mover(sonda));
+        return sonda.pegarSentidoAtual();
+    }
 
-        private Sentido explorarPlaneta(final Sondas sonda, List<? extends Comandos> comandos) {
-            comandos.forEach(g -> g.mover(sonda));
-            return sonda.pegarSentidoAtual();
-        }
+    public Sentido explorarPlaneta(Sentido sentidoInicial, List<Comandos> comandos) {
+        final Sondas sonda = estacaoEspacial.adicionaSondaNoPlaneta(sentidoInicial);
+        return explorarPlaneta(sonda, comandos);
+    }
 
-        public Sentido explorarPlaneta(Sentido sentidoInicial, List<? extends Comandos> comandos) {
-            final Sondas sonda = estacaoEspacial.adicionaSondaNoPlaneta(sentidoInicial);
-            return explorarPlaneta(sonda, comandos);
-        }
+    public List<Sentido> pegarSonda() {
+        return estacaoEspacial.pegarSonda().stream().map(Sondas::pegarSentidoAtual).collect(Collectors.toList());
+    }
 
-        public List<Sentido> pegarSonda() {
-            return estacaoEspacial.pegarSonda().stream().map(Sondas::pegarSentidoAtual).collect(Collectors.toList());
-        }
+    public Sentido adicionaSondaNoPlaneta(Sentido sentido) {
+        return estacaoEspacial.adicionaSondaNoPlaneta(sentido).pegarSentidoAtual();
+    }
 
-        public Sentido adicionaSondaNoPlaneta(Sentido sentido) {
-            return estacaoEspacial.adicionaSondaNoPlaneta(sentido).pegarSentidoAtual();
-        }
+    public Sentido explorarPlaneta(Posicao posicao, List<Comandos> comandos) {
+        final Sondas sonda = estacaoEspacial.buscarPelaPosicao(posicao).orElseThrow(
+                () -> new ExcecaoNaoEncontrada(" Sonda não foi encontrada na posição" + posicao.toString()));
+        return explorarPlaneta(sonda, comandos);
 
-        public Sentido explorarPlaneta(Posicao posicao, List<? extends Comandos> comandos) {
-            final Sondas sonda = estacaoEspacial.buscarPelaPosicao(posicao).orElseThrow(
-                    () -> new ExcecaoNaoEncontrada(" Sonda não foi encontrada na posição" + posicao.toString()));
-            return explorarPlaneta(sonda, comandos);
-
-        }
     }
 
 }

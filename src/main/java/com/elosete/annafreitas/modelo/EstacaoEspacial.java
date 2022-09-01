@@ -23,7 +23,7 @@ public class EstacaoEspacial {
         return planeta.pegarSonda();
     }
 
-    public Sondas buscarPelaPosicao(Posicao posicao) {
+    public Optional<Sondas> buscarPelaPosicao(Posicao posicao) {
         return planeta.buscarPelaPosicao(posicao);
     }
 
