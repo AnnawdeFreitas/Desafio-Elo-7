@@ -14,10 +14,10 @@ public class AreaPlanalto {
 
     public void validarArea(Posicao posicao) {
         if (Boolean.FALSE.equals(posicao.eMaiorOuIgualA(margemInferiorEsquerda))) {
-            throw new ExcecaoRegraNegocios("A Posicao" + posicao.toString() + "Está fora da área que inicia em"
+            throw new ExcecaoRegraNegocios("A Posição " + posicao.toString() + " Está fora da área que inicia em "
                     + margemInferiorEsquerda.toString());
         } else if (Boolean.FALSE.equals(posicao.eMenorOuIgualA(margemSuperiorDireita))) {
-            throw new ExcecaoRegraNegocios("A Posicao" + posicao.toString() + "Está fora da área que termina em"
+            throw new ExcecaoRegraNegocios("A Posição " + posicao.toString() + " Está fora da área que termina em "
                     + margemSuperiorDireita.toString());
         }
     }
