@@ -15,7 +15,7 @@ public class ExplorandoConfig {
     @Autowired
     public EstacaoEspacial pegarEstacaoEspacial(AreaPlanaltoConfig areaPlanaltoConfig, ExplorandoBuild explorandoBuild) {
          final Limite limite = areaPlanaltoConfig.getLimite();
-        return explorandoBuild.comLimiteDaAreaPlanalto(limite.getX(), limite.getY()).comPlaneta().comEstacaoEspacial()
+        return explorandoBuild.limiteAreaPlanalto(limite.getX(), limite.getY()).comPlaneta().comEstacaoEspacial()
                 .build();
     }
 

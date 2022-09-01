@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "areaPlanalto")
+@ConfigurationProperties(prefix = "areaplanalto")
 public class AreaPlanaltoConfig {
 
     private Limite limite = new Limite();
