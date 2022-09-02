@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Jornada implements Serializable {
 
-    private static long serialVersionUID = 0;
+    private static final long serialVersionUID = 4919597663624575408L;
     private final Sentido sentido;
     private final List<Comandos> comandos;
 

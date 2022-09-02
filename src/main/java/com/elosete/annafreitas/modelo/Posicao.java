@@ -5,6 +5,8 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class Posicao implements Serializable {
+
+    private static final long serialVersionUID = -1507597262787255195L;
     private Integer x;
     private Integer y;
 
