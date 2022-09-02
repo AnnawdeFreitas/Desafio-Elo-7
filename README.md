@@ -1,7 +1,7 @@
 <h1 align="center">Desafio Elo-7 </h1>
 
 <h1 align="center">
-    Estação Espacial
+    Sondas Espaciais
 </h1>
 <p align="center">🚀 API desenvolvida para possibilitar o movimento de sondas em estações espaciais</p>
 
@@ -10,7 +10,7 @@
 
  O Objetivo desse projeto é possibilitar o movimento de sondas em estações espaciais, com uma disponibilidade de área de pouso no Planalto delimitada, onde as sondas podem pousar e se movimentar para frente, para o lado esquerdo ou lado direito, através de comandos. 
  É possível que uma ou várias sondas pousem ao mesmo tempo, em um ou vários planetas, e é necessário que essa movimentação seja coordenada por comandos e funcione de forma adequada.
-
+<p align="center">
  <a href="#tecnologias">Tecnologias</a> • 
  ### 🛠 Tecnologias
 
@@ -21,11 +21,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Framework: Spring Boot
 - Containerização: Docker
 
-
+<p align="center">
  <a href="#Documentação">Documentação</a> •
-
- <a href="#autor">Autor</a>
+<p align="center">
+ <a href="#autor">Autora</a>
 </p>
 
-##Autora 
-Anna Waleska de Freitas 
+## Anna Waleska de Freitas 
