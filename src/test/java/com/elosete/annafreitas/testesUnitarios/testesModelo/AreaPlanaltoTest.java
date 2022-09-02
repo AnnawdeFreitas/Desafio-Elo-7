@@ -1,13 +1,11 @@
-package com.elosete.annafreitas.testesModelo;
+package com.elosete.annafreitas.testesUnitarios.testesModelo;
 
 import com.elosete.annafreitas.excecoes.ExcecaoRegraNegocios;
 import com.elosete.annafreitas.modelo.AreaPlanalto;
 import com.elosete.annafreitas.modelo.Posicao;
-
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.*;
+import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -18,9 +16,6 @@ import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AreaPlanaltoTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
 
     private AreaPlanalto areaPlanalto;
 
@@ -57,8 +52,7 @@ public class AreaPlanaltoTest {
         when(posicao.toString()).thenReturn("(3,4)");
         when(margemInferiorEsquerda.toString()).thenReturn("(7,8)");
 
-        expectedException.expect(ExcecaoRegraNegocios.class);
-        expectedException.expectMessage("A Posição (3,4) Está fora da área que inicia em (7,8)");
+        Assertions.assertThrows( "A Posição (3,4) Está fora da área que inicia em (7,8)");
 
         areaPlanalto.validarArea(posicao);
 
@@ -72,8 +66,7 @@ public class AreaPlanaltoTest {
         when(posicao.toString()).thenReturn("(5,6)");
         when(margemSuperiorDireita.toString()).thenReturn("(1,2)");
 
-        expectedException.expect(ExcecaoRegraNegocios.class);
-        expectedException.expectMessage("A Posição (5,6) Está fora da área que termina em (1,2)");
+        Assertions.assertThat("A Posição (5,6) Está fora da área que termina em (1,2)");
 
         areaPlanalto.validarArea(posicao);
 

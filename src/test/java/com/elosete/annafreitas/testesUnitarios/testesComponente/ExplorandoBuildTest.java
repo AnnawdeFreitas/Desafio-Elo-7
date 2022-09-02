@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.testesComponente;
+package com.elosete.annafreitas.testesUnitarios.testesComponente;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

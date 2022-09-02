@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.testesConfig;
+package com.elosete.annafreitas.testesUnitarios.testesConfig;
 
 import com.elosete.annafreitas.componente.ExplorandoBuild;
 import com.elosete.annafreitas.configuracoes.AreaPlanaltoConfig;

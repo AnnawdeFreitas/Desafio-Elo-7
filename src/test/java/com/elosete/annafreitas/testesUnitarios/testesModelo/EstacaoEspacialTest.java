@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.testesModelo;
+package com.elosete.annafreitas.testesUnitarios.testesModelo;
 
 import com.elosete.annafreitas.modelo.Comandos;
 import com.elosete.annafreitas.modelo.EstacaoEspacial;
