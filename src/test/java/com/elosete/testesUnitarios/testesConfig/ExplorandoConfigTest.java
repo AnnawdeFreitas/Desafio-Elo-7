@@ -1,9 +1,9 @@
-package com.elosete.annafreitas.testesUnitarios.testesConfig;
+package com.elosete.testesUnitarios.testesConfig;
 
-import com.elosete.annafreitas.componente.ExplorandoBuild;
-import com.elosete.annafreitas.configuracoes.AreaDoPlanetaConfig;
-import com.elosete.annafreitas.configuracoes.ExplorandoConfig;
-import com.elosete.annafreitas.configuracoes.AreaDoPlanetaConfig.Limite;
+import com.elosete.componente.ExplorandoBuild;
+import com.elosete.configuracoes.AreaDoPlanetaConfig;
+import com.elosete.configuracoes.ExplorandoConfig;
+import com.elosete.configuracoes.AreaDoPlanetaConfig.Limite;
 
 import org.junit.Before;
 import org.junit.Test;

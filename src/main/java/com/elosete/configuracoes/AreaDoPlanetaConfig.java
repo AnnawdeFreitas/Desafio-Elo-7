@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.configuracoes;
+package com.elosete.configuracoes;
 
 import java.io.Serializable;
 

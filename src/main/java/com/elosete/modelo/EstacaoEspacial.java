@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.modelo;
+package com.elosete.modelo;
 
 import java.util.List;
 import java.util.Optional;

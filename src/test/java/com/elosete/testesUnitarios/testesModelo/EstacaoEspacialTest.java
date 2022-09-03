@@ -1,10 +1,10 @@
-package com.elosete.annafreitas.testesUnitarios.testesModelo;
+package com.elosete.testesUnitarios.testesModelo;
 
-import com.elosete.annafreitas.modelo.Comandos;
-import com.elosete.annafreitas.modelo.EstacaoEspacial;
-import com.elosete.annafreitas.modelo.Planetas;
-import com.elosete.annafreitas.modelo.Sentido;
-import com.elosete.annafreitas.modelo.Sondas;
+import com.elosete.modelo.Comandos;
+import com.elosete.modelo.EstacaoEspacial;
+import com.elosete.modelo.Planetas;
+import com.elosete.modelo.Sentido;
+import com.elosete.modelo.Sondas;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

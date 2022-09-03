@@ -1,6 +1,6 @@
-package com.elosete.annafreitas.api.mapper;
+package com.elosete.api.mapper;
 
-import com.elosete.annafreitas.modelo.*;
+import com.elosete.modelo.*;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,4 @@
-package com.elosete.annafreitas;
+package com.elosete;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

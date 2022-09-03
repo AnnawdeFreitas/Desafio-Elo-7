@@ -1,10 +1,10 @@
-package com.elosete.annafreitas.testesUnitarios.testesModelo;
+package com.elosete.testesUnitarios.testesModelo;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.elosete.annafreitas.modelo.Posicao;
+import com.elosete.modelo.Posicao;
 
 public class PosicaoTest {
 

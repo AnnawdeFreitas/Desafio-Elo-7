@@ -1,8 +1,8 @@
-package com.elosete.annafreitas.api.controller;
+package com.elosete.api.controller;
 
-import com.elosete.annafreitas.servico.EstacaoEspacialServico;
-import com.elosete.annafreitas.api.mapper.Jornada;
-import com.elosete.annafreitas.modelo.*;
+import com.elosete.servico.EstacaoEspacialServico;
+import com.elosete.api.mapper.Jornada;
+import com.elosete.modelo.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

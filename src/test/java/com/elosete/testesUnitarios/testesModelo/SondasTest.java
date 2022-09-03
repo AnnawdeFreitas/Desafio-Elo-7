@@ -1,9 +1,9 @@
-package com.elosete.annafreitas.testesUnitarios.testesModelo;
+package com.elosete.testesUnitarios.testesModelo;
 
-import com.elosete.annafreitas.modelo.Movimentos;
-import com.elosete.annafreitas.modelo.Planetas;
-import com.elosete.annafreitas.modelo.Posicao;
-import com.elosete.annafreitas.modelo.Sondas;
+import com.elosete.modelo.Movimentos;
+import com.elosete.modelo.Planetas;
+import com.elosete.modelo.Posicao;
+import com.elosete.modelo.Sondas;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.only;

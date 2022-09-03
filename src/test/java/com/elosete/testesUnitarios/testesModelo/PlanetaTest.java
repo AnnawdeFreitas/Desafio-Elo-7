@@ -1,11 +1,11 @@
-package com.elosete.annafreitas.testesUnitarios.testesModelo;
+package com.elosete.testesUnitarios.testesModelo;
 
-import com.elosete.annafreitas.excecoes.ExcecaoNaoEncontrada;
-import com.elosete.annafreitas.excecoes.ExcecaoRegraNegocios;
-import com.elosete.annafreitas.modelo.AreaDoPlaneta;
-import com.elosete.annafreitas.modelo.Planetas;
-import com.elosete.annafreitas.modelo.Posicao;
-import com.elosete.annafreitas.modelo.Sondas;
+import com.elosete.excecoes.ExcecaoNaoEncontrada;
+import com.elosete.excecoes.ExcecaoRegraNegocios;
+import com.elosete.modelo.AreaDoPlaneta;
+import com.elosete.modelo.Planetas;
+import com.elosete.modelo.Posicao;
+import com.elosete.modelo.Sondas;
 
 import static org.mockito.Mockito.only;
 import static org.mockito.Mockito.verify;

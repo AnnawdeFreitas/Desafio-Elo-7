@@ -1,7 +1,7 @@
-package com.elosete.annafreitas.testesUnitarios.testesModelo;
+package com.elosete.testesUnitarios.testesModelo;
 
-import com.elosete.annafreitas.modelo.Comandos;
-import com.elosete.annafreitas.modelo.Sondas;
+import com.elosete.modelo.Comandos;
+import com.elosete.modelo.Sondas;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.excecoes;
+package com.elosete.excecoes;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.excecoes;
+package com.elosete.excecoes;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

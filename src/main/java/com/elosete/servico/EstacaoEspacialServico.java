@@ -1,7 +1,7 @@
-package com.elosete.annafreitas.servico;
+package com.elosete.servico;
 
-import com.elosete.annafreitas.excecoes.ExcecaoNaoEncontrada;
-import com.elosete.annafreitas.modelo.*;
+import com.elosete.excecoes.ExcecaoNaoEncontrada;
+import com.elosete.modelo.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

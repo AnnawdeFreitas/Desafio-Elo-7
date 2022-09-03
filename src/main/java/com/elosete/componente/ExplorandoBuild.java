@@ -1,6 +1,6 @@
-package com.elosete.annafreitas.componente;
+package com.elosete.componente;
 
-import com.elosete.annafreitas.modelo.*;
+import com.elosete.modelo.*;
 
 import org.springframework.stereotype.Component;
 

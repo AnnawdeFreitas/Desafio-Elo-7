@@ -1,7 +1,7 @@
-package com.elosete.annafreitas.testesUnitarios.testesModelo;
+package com.elosete.testesUnitarios.testesModelo;
 
-import com.elosete.annafreitas.modelo.Movimentos;
-import com.elosete.annafreitas.modelo.Posicao;
+import com.elosete.modelo.Movimentos;
+import com.elosete.modelo.Posicao;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

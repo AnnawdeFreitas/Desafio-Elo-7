@@ -1,7 +1,7 @@
-package com.elosete.annafreitas.modelo;
+package com.elosete.modelo;
 
-import com.elosete.annafreitas.excecoes.ExcecaoNaoEncontrada;
-import com.elosete.annafreitas.excecoes.ExcecaoRegraNegocios;
+import com.elosete.excecoes.ExcecaoNaoEncontrada;
+import com.elosete.excecoes.ExcecaoRegraNegocios;
 
 import java.util.HashMap;
 import java.util.List;

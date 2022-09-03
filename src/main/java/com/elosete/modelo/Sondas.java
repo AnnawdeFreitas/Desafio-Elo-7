@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.modelo;
+package com.elosete.modelo;
 
 public class Sondas {
     private Planetas planeta;

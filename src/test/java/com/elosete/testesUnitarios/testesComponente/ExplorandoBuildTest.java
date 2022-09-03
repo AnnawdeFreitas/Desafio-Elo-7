@@ -1,12 +1,12 @@
-package com.elosete.annafreitas.testesUnitarios.testesComponente;
+package com.elosete.testesUnitarios.testesComponente;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.elosete.annafreitas.componente.ExplorandoBuild;
-import com.elosete.annafreitas.modelo.EstacaoEspacial;
+import com.elosete.componente.ExplorandoBuild;
+import com.elosete.modelo.EstacaoEspacial;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

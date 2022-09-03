@@ -1,8 +1,8 @@
-package com.elosete.annafreitas.testesUnitarios.testesModelo;
+package com.elosete.testesUnitarios.testesModelo;
 
-import com.elosete.annafreitas.excecoes.ExcecaoRegraNegocios;
-import com.elosete.annafreitas.modelo.AreaDoPlaneta;
-import com.elosete.annafreitas.modelo.Posicao;
+import com.elosete.excecoes.ExcecaoRegraNegocios;
+import com.elosete.modelo.AreaDoPlaneta;
+import com.elosete.modelo.Posicao;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;

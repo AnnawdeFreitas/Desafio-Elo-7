@@ -1,4 +1,4 @@
-package com.elosete.annafreitas.excecoes;
+package com.elosete.excecoes;
 
 public class ExcecaoRegraNegocios extends RuntimeException {
 

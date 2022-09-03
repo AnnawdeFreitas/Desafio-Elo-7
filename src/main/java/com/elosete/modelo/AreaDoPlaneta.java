@@ -1,6 +1,6 @@
-package com.elosete.annafreitas.modelo;
+package com.elosete.modelo;
 
-import com.elosete.annafreitas.excecoes.ExcecaoRegraNegocios;
+import com.elosete.excecoes.ExcecaoRegraNegocios;
 
 public class AreaDoPlaneta {
     private final Posicao margemInferiorEsquerda;

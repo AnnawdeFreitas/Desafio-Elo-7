@@ -1,10 +1,10 @@
-package com.elosete.annafreitas.testesUnitarios.testesServico;
+package com.elosete.testesUnitarios.testesServico;
 
-import com.elosete.annafreitas.modelo.Comandos;
-import com.elosete.annafreitas.modelo.EstacaoEspacial;
-import com.elosete.annafreitas.modelo.Sentido;
-import com.elosete.annafreitas.modelo.Sondas;
-import com.elosete.annafreitas.servico.EstacaoEspacialServico;
+import com.elosete.modelo.Comandos;
+import com.elosete.modelo.EstacaoEspacial;
+import com.elosete.modelo.Sentido;
+import com.elosete.modelo.Sondas;
+import com.elosete.servico.EstacaoEspacialServico;
 
 import static org.mockito.Mockito.*;
 
