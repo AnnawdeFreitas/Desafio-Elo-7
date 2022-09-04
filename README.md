@@ -22,8 +22,36 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <p align="center">
 <h1> Documentação • </h1>
+´´´
+Swagger UI: http://localhost:8080/swagger-ui/index.html#/
+´´´
+## Implantar sonda
+Enviar uma sonda para Marte informando em que localização ela vai ser implantanda.
+```
+POST /estacao-espacial/sondas
+```
+
+## Listas sondas implantadas
+Listar todas as sondas já implantadas em Marte.
+```
+GET /estacao-espacial/sondas
+```
+
+## Controlar sonda
+Enviar comandos para que a sonda se movimente.
+```
+PUT /estacao-espacial/sondas//{x}/{y}/explorar-planeta-pela-posicao
+```
+
+## Jornada
+Implantar uma nova sonda com comandos para que ela faça uma jornada por Marte.
+```
+POST /estacao-espacial/sondas//explorar-planeta-pela-jornada
+```
+
+
 <p align="center">
  <h1> Autora • </h1>
 </p>
 
-## Anna Waleska de Freitas 
+## Anna Waleska de Freitas Salles
