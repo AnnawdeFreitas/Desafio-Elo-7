@@ -20,8 +20,8 @@ public class AreaDoPlanetaConfig {
     }
 
     public static class Limite implements Serializable {
-        private Integer x;
-        private Integer y;
+        private Integer x = 5;
+        private Integer y = 5;
 
         public Integer getX() {
             return x;

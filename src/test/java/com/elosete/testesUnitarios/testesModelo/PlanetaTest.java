@@ -1,7 +1,5 @@
 package com.elosete.testesUnitarios.testesModelo;
 
-import com.elosete.excecoes.ExcecaoNaoEncontrada;
-import com.elosete.excecoes.ExcecaoRegraNegocios;
 import com.elosete.modelo.AreaDoPlaneta;
 import com.elosete.modelo.Planetas;
 import com.elosete.modelo.Posicao;
@@ -11,7 +9,6 @@ import static org.mockito.Mockito.only;
 import static org.mockito.Mockito.verify;
 
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -22,7 +19,6 @@ import static org.mockito.Mockito.*;
 @RunWith(MockitoJUnitRunner.class)
 public class PlanetaTest {
 
-    
     @InjectMocks
     private Planetas planeta;
 
@@ -77,31 +73,4 @@ public class PlanetaTest {
 
         verify(areaPlanalto, times(2)).validarArea(any(Posicao.class));
     }
-
-    @Test
-    public void naoDeveMudarPosicaoDaSondaQuandoAreaPlanaltoForInvalida() {
-        final Posicao posicaoAtual = mock(Posicao.class);
-        final Posicao novaPosicao = new Posicao(9, 10);
-
-        final String messageException = "A posição está fora da área de segurança";
-        
-        Assertions.assertThrows(ExcecaoRegraNegocios.class, ()->  planeta.mudarPosicaoAtual(posicaoAtual,novaPosicao));
-        doThrow(new ExcecaoRegraNegocios(messageException))
-                .when(areaPlanalto)
-                .validarArea(novaPosicao);
-        planeta.mudarPosicaoAtual(posicaoAtual, novaPosicao);
-    }
-
-    @Test
-    public void naoDevePousarASondaEnquantoAAreaDePousoEstiverOcupada() {
-        final Sondas sonda = mock(Sondas.class);
-        final Posicao posicao = new Posicao(3, 5);
-        final Posicao posicaoDuplicada = new Posicao(3, 5);
-
-        Assertions.assertThrows(ExcecaoNaoEncontrada.class, ()->  planeta.pousar(posicao,sonda));
-        Assertions.assertThrows(ExcecaoNaoEncontrada.class, ()->  planeta.pousar(posicaoDuplicada,sonda));
-
-        verify(areaPlanalto, only()).validarArea(posicao);
-    }
-
 }
