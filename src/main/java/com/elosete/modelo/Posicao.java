@@ -43,7 +43,8 @@ public class Posicao implements Serializable {
         }
     }
 
-    public Boolean igual(Object objeto) {
+    @Override
+    public boolean equals(Object objeto) {
         if (this == objeto) {
             return true;
         }

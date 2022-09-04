@@ -21,7 +21,7 @@ public class MovimentosIT {
     private ObjectMapper objectMapper;
 
     @Test
-    public void shouldSerialize() throws JsonProcessingException {
+    public void deveSerializar() throws JsonProcessingException {
         assertThat(objectMapper.writeValueAsString(Movimentos.NORTE)).isEqualTo("\"N\"");
         assertThat(objectMapper.writeValueAsString(Movimentos.LESTE)).isEqualTo("\"E\"");
         assertThat(objectMapper.writeValueAsString(Movimentos.SUL)).isEqualTo("\"S\"");
@@ -29,7 +29,7 @@ public class MovimentosIT {
     }
 
     @Test
-    public void shouldDeserialize() throws IOException {
+    public void deveDesserializar() throws IOException {
         assertThat(objectMapper.readValue("\"N\"", Movimentos.class)).isEqualTo(Movimentos.NORTE);
         assertThat(objectMapper.readValue("\"E\"", Movimentos.class)).isEqualTo(Movimentos.LESTE);
         assertThat(objectMapper.readValue("\"S\"", Movimentos.class)).isEqualTo(Movimentos.SUL);
