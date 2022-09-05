@@ -10,6 +10,7 @@
 
  O Objetivo desse projeto é possibilitar o movimento de sondas em estações espaciais, com uma disponibilidade de área de pouso no Planalto delimitada, onde as sondas podem pousar e se movimentar para frente, para o lado esquerdo ou lado direito, através de comandos. 
  É possível que uma ou várias sondas pousem ao mesmo tempo, em um ou vários planetas, e é necessário que essa movimentação seja coordenada por comandos e funcione de forma adequada.
+
 <p align="center">
  <h1> 🛠 Tecnologias •</h1>
 
@@ -25,7 +26,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ´´´
 Swagger UI: http://localhost:8080/swagger-ui/index.html#/
 ´´´
-## Implantar sonda
+
+## Implantar Sondas
+
 Enviar uma sonda para Marte informando em que localização ela vai ser implantanda.
 ```
 POST /estacao-espacial/sondas
