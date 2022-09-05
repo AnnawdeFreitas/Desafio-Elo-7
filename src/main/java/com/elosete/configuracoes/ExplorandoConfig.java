@@ -13,9 +13,13 @@ public class ExplorandoConfig {
 
     @Bean
     @Autowired
-    public EstacaoEspacial pegarEstacaoEspacial(AreaDoPlanetaConfig areaDoPlanetaConfig, ExplorandoBuild explorandoBuild) {
-         final Limite limite = areaDoPlanetaConfig.getLimite();
-        return explorandoBuild.limiteAreaDoPlaneta(limite.getX(), limite.getY()).comPlaneta().comEstacaoEspacial()
+    public EstacaoEspacial pegarEstacaoEspacial(AreaDoPlanetaConfig areaDoPlanetaConfig,
+            ExplorandoBuild explorandoBuild) {
+        final Limite limite = areaDoPlanetaConfig.getLimite();
+        return explorandoBuild
+                .limiteAreaDoPlaneta(limite.getX(), limite.getY())
+                .comPlaneta()
+                .comEstacaoEspacial()
                 .build();
     }
 

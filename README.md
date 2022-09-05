@@ -38,17 +38,47 @@ Enviar uma sonda para o planeta, informando em que localização a mesma será i
 ```
 POST /estacao-espacial/sondas
 ```
+## Exemplo 
+
+```
+curl -X 'POST' \
+  'http://localhost:8080/estacao-espacial/sondas' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "x": 1,
+  "y": 2,
+  "movimentos": "N"
+}'
+```
 
 ## Lista de sondas implantadas
 Listar todas as sondas já implantadas.
 ```
 GET /estacao-espacial/sondas
 ```
+## Exemplo 
+
+```
+curl -X 'GET' \
+  'http://localhost:8080/estacao-espacial/sondas' \
+  -H 'accept: application/json'
+```
 
 ## Controlar sonda
 Enviar comandos para que a sonda se movimente.
 ```
 PUT /estacao-espacial/sondas//{x}/{y}/explorar-planeta-pela-posicao
+```
+## Exemplo
+```
+curl -X 'PUT' \
+  'http://localhost:8080/estacao-espacial/sondas/1/2/explorar-planeta-pela-posicao' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '[
+  "M"
+]'
 ```
 
 ## Jornada
