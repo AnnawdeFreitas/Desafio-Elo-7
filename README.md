@@ -23,7 +23,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <p align="center">
 <h1> Documentação • </h1>
-```
 
 ## SwaggerUI link
 
@@ -35,13 +34,13 @@ Documentação gerada no SwaggerUI
 
 ## Implantar Sondas
 
-Enviar uma sonda para Marte informando em que localização ela vai ser implantanda.
+Enviar uma sonda para o planeta, informando em que localização a mesma será implantanda.
 ```
 POST /estacao-espacial/sondas
 ```
 
-## Listas sondas implantadas
-Listar todas as sondas já implantadas em Marte.
+## Lista de sondas implantadas
+Listar todas as sondas já implantadas.
 ```
 GET /estacao-espacial/sondas
 ```
@@ -53,7 +52,7 @@ PUT /estacao-espacial/sondas//{x}/{y}/explorar-planeta-pela-posicao
 ```
 
 ## Jornada
-Implantar uma nova sonda com comandos para que ela faça uma jornada por Marte.
+Implantar uma nova sonda com comandos para que ela faça uma jornada pelo planeta.
 ```
 POST /estacao-espacial/sondas//explorar-planeta-pela-jornada
 ```
