@@ -8,11 +8,13 @@ import java.io.Serializable;
 
 public class Sentido implements Serializable {
     private static final long serialVersionUID = -4060851020632500627L;
-    private Posicao posicao;
     private Movimentos movimentos;
+    @JsonUnwrapped
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private Posicao posicao;
 
     @JsonCreator
-    public Sentido(@JsonProperty(value = "posicao") @JsonUnwrapped Posicao posicao,
+    public Sentido(@JsonProperty(value = "posicao") Posicao posicao,
                    @JsonProperty(value = "movimentos") Movimentos movimentos) {
         this.posicao = posicao;
         this.movimentos = movimentos;

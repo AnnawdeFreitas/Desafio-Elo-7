@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ExplorandoBuild {
+    
     public AreaDoPlanetaBuildImpl limiteAreaDoPlaneta(Integer margemSuperiorDireitaX, Integer margemInferiorEsquerdaY) {
         return new AreaDoPlanetaBuildImpl(margemInferiorEsquerdaY, margemSuperiorDireitaX);
     }

@@ -87,6 +87,12 @@
 			<version>2.35.0</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>net.javacrumbs.json-unit</groupId>
+			<artifactId>json-unit-fluent</artifactId>
+			<version>1.13.0</version>
+		</dependency>
+		<!-- Thanks for using https://jar-download.com -->
 	</dependencies>
 	<build>
 		<plugins>
@@ -94,7 +100,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-
 		</plugins>
 	</build>
 

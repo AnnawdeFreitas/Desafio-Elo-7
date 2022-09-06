@@ -12,12 +12,15 @@ import java.util.List;
 public class Jornada implements Serializable {
 
     private static final long serialVersionUID = 4919597663624575408L;
-    private final Sentido sentido;
     private final List<Comandos> comandos;
+
+    @JsonUnwrapped
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private final Sentido sentido;
 
     @JsonCreator
     public Jornada(
-            @JsonProperty(value = "sentido") @JsonUnwrapped final Sentido sentido,
+            @JsonProperty(value = "sentido") final Sentido sentido,
             @JsonProperty(value = "comandos") final List<Comandos> comandos) {
         this.sentido = sentido;
         this.comandos = comandos;
